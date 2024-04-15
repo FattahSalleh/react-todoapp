@@ -1,0 +1,247 @@
+/* TAG SELECTORS */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  color: black;
+}
+
+img {
+  min-width: auto;
+  min-height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  border: 2px solid #83E2FF;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input:focus-visible {
+  border-color: #29B6F6;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  color: #808080;
+  background-color: #808080;
+  opacity: 0.7;
+  margin-block: 0;
+}
+
+/* CLASS SELECTORS */
+
+.small {
+  opacity: 0.5;
+  margin-top: 30px;
+}
+
+.TodoListContainer {
+  width: 50vmin;
+  background: white;
+  height: auto;
+  padding: 10px 20px;
+  border: 1px solid #808080;
+  border-radius: 5px;
+}
+
+.TodoListHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TodoListHeader .right {
+  display: flex;
+}
+
+.right img {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.right .Checkbox img {
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+.ellipsisItem .ellipsisItemRow > img {
+  margin-left: 0px;
+}
+
+.Checkbox {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkmarkIcon {
+  max-width: 12px;
+  max-height: 12px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.TodoListItem .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TodoListItem .left {
+  width: -webkit-fill-available;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.confirmBtnContainer {
+  display: flex;
+  align-items: flex-start;
+  width: max-content;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 100;
+}
+
+.confirmBtnContainer .btn {
+  background: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin: 0 3px;
+  padding: 5px 10px;
+}
+
+.confirmBtnContainer .btn:hover {
+  background: #e9e6e6;
+}
+
+.confirmBtnContainer .btn img {
+  width: 15px;
+  height: 15px;
+}
+
+.TodoListItem .right {
+  display: flex;
+}
+
+.TodoListItem hr {
+  opacity: 0.3;
+}
+
+.AddTodoListForm {
+  padding-top: 10px;
+}
+
+::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.AddTodoListForm .right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.AddTodoListForm .right .btn {
+  margin-left: 15px;
+}
+
+.AddTodoListForm .right .btn-create {
+  padding: 8px 16px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #83E2FF;
+  background: #83E2FF;
+  color: black;
+  transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.AddTodoListForm .right .btn-create:disabled {
+  box-shadow: none;
+}
+
+.AddTodoListForm .right .btn-create:hover {
+  background: #29B6F6;
+  border-color: #29B6F6;
+}
+
+.AddTodoListForm .right .btn-create:disabled {
+  background: #dddddd;
+  border-color: #dddddd;
+  color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
+.AddTodoListForm .right .btn-cancel {
+  padding: 0;
+  border: none;
+  background: none;
+  color: #29B6F6;
+}
+
+.EllipsisDropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.EllipsisDropdown img {
+  cursor: pointer;
+}
+
+.ellipsisItem {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: max-content;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  color: #808080;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  z-index: 100;
+  padding: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.right .ellipsisItem img {
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+.ellipsisItem .ellipsisItemRow {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
